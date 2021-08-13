@@ -1,4 +1,3 @@
-
 // Se define la variable 'react' en scope
 
 import React from "react";

@@ -1,7 +1,8 @@
+import CartWidget from "./CartWidget"
 
 
 const NavBar=() =>{
-
+  
     return(
         <header>
             <h1 id="titulo">E-commerce</h1>
@@ -19,7 +20,7 @@ const NavBar=() =>{
                     </ul>
                 </li>
                 <li><a href="#">Nuestros servicios</a>
-                <ul id="submenuNS">
+                    <ul id="submenuNS">
                         <li><a href="#">Asesoramiento</a></li>
                         <li><a href="#">Propuestas comerciales</a></li>
                         <li><a href="#">Capacitación</a></li>
@@ -28,10 +29,10 @@ const NavBar=() =>{
                 <li><a href="#">Cómo comprar</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-
+            <CartWidget></CartWidget>
             
         </header>
     )
 }
 
-export default NavBar
+export default NavBar;

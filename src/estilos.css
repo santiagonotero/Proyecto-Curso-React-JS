@@ -5,10 +5,10 @@
 
 header{
     display:grid;
-    grid-template-columns: "1fr 1fr";
+    grid-template-columns: "10fr 1fr";
     grid-template-rows: "1fr 1fr";
     grid-template-areas: "titulo titulo"
-                        "menuPpal menuPpal";
+                        "menuPpal iconoCarrito";
     background-color:rgb(252, 215, 8);
 }
 
@@ -19,6 +19,20 @@ h1{
 #titulo{
     grid-area: titulo;
     padding: 30px 40px;
+}
+
+#iconoCarrito{
+    grid-area: iconoCarrito;
+    width:50px;
+    padding: 5px 10px;
+    margin-bottom: 0px;
+    align-self: center;
+    justify-items: center;
+    cursor: pointer;
+}
+
+#iconoCarrito:hover{
+    background-color: rgb(94, 94, 231);
 }
 
 #menuPpal{
