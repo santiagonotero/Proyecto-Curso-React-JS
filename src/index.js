@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// Se define la variable 'react' en scope
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import React from "react";
+
+// Se define la variable 'ReactDOM' en scope
+import ReactDOM from "react-dom";
+
+//Definimos nuestro elemento de React
+
+import App from "./App"
+
+// Agregamos una hoja de estilos al proyecto
+
+import "./estilos.css"
+
+// Aquí tenemos nuestra función render corriendo
+
+ReactDOM.render(<App />, document.getElementById('root'))
