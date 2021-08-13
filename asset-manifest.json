@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/santiagonotero/Proyecto-Curso-React-JS/static/css/main.1f73123e.chunk.css",
+    "main.js": "/santiagonotero/Proyecto-Curso-React-JS/static/js/main.cae00adb.chunk.js",
+    "main.js.map": "/santiagonotero/Proyecto-Curso-React-JS/static/js/main.cae00adb.chunk.js.map",
+    "runtime-main.js": "/santiagonotero/Proyecto-Curso-React-JS/static/js/runtime-main.8b8e07bb.js",
+    "runtime-main.js.map": "/santiagonotero/Proyecto-Curso-React-JS/static/js/runtime-main.8b8e07bb.js.map",
+    "static/js/2.a84f6ff0.chunk.js": "/santiagonotero/Proyecto-Curso-React-JS/static/js/2.a84f6ff0.chunk.js",
+    "static/js/2.a84f6ff0.chunk.js.map": "/santiagonotero/Proyecto-Curso-React-JS/static/js/2.a84f6ff0.chunk.js.map",
+    "index.html": "/santiagonotero/Proyecto-Curso-React-JS/index.html",
+    "static/css/main.1f73123e.chunk.css.map": "/santiagonotero/Proyecto-Curso-React-JS/static/css/main.1f73123e.chunk.css.map",
+    "static/js/2.a84f6ff0.chunk.js.LICENSE.txt": "/santiagonotero/Proyecto-Curso-React-JS/static/js/2.a84f6ff0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b8e07bb.js",
+    "static/js/2.a84f6ff0.chunk.js",
+    "static/css/main.1f73123e.chunk.css",
+    "static/js/main.cae00adb.chunk.js"
+  ]
+}
