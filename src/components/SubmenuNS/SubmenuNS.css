@@ -1,0 +1,29 @@
+#submenuNS{
+    position: absolute;
+    top:160%;
+    left:0%;
+    background-color:rgb(252, 215, 8);
+    list-style:none;
+    list-style-type: none; 
+    cursor:pointer;
+    width: 250px;
+}
+
+#submenuNS li{   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
+    cursor:pointer;
+    margin-left:0px;
+    padding: 10px 0px; 
+    text-decoration: none;
+    /* background-color:rgb(252, 215, 8);    */
+}
+
+#submenuNS li a{
+    color:#010101;
+    
+}
+
+#submenuNS li:hover > a{
+    color:#fefefe;
+}
