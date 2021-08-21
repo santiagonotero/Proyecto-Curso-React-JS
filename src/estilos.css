@@ -20,18 +20,3 @@ h1{
     grid-area: titulo;
     padding: 30px 40px;
 }
-
-#iconoCarrito{
-    grid-area: iconoCarrito;
-    width:50px;
-    padding: 5px 10px;
-    margin-bottom: 0px;
-    align-self: center;
-    justify-items: center;
-    cursor: pointer;
-}
-
-#iconoCarrito:hover{
-    background-color: rgb(94, 94, 231);
-}
-
