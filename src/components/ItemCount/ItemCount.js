@@ -25,7 +25,6 @@ const ItemCount = ({stock, initial, onAdd})=>{
         }
     }
 
-    // if(stock > 0){
         return(
             <div className="ButtonContainer">
                 <p id="leyenda">Cantidad de productos:</p>
