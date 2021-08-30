@@ -3,9 +3,6 @@ import React from "react";
 import "../Item/Item.css"
 
 const Item=({id, producto, marca, stock}) =>{
-    console.log(id);
-    console.log({producto});
-    console.log({marca});
 
     return(
 

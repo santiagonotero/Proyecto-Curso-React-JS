@@ -25,18 +25,18 @@ const DataQuery = () =>{    //Hace consultas a la API por datos
     
         useEffect(()=>{
             DataQuery().then((data)=>{
-                let filteredData= data.filter((item)=>item.producto =="computadora");
+                let filteredData= data.filter((item)=>item.producto ==="computadora");
                 setDataToShow(filteredData);
             })
         });
 
 
-        return (dataToShow.length == 0 ? (
+        return (dataToShow.length === 0 ? (
             <h1>Cargando...</h1>):
             (
                 <ul>
                     {dataToShow.map((element) => (
-                        <Item id={element.id} producto={element.producto} marca={element.marca} stock={element.stock}></Item> 
+                        <Item key={element.id} producto={element.producto} marca={element.marca} stock={element.stock}></Item> 
                         
                         )
                     )}

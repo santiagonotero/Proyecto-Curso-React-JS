@@ -1,0 +1,17 @@
+#itemDetailStyle{
+    background-color: gold;
+    padding: 30px;
+    max-width: 900px;
+    margin-left: 30px;
+}
+
+#detailCaption {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.descFont{
+    margin-left: 50px;
+    padding: 3px 0px;
+}
