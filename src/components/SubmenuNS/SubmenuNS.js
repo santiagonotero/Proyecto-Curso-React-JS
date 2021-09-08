@@ -1,12 +1,13 @@
 import "./SubmenuNS.css"
+import {Link} from "react-router-dom"
 
 const SubmenuNS = () =>{
     return(
         <>
         <ul id="submenuNS">
-            <li><a href="#">Asesoramiento</a></li>
-            <li><a href="#">Propuestas comerciales</a></li>
-            <li><a href="#">Capacitación</a></li>
+            <li><Link to="#">Asesoramiento</Link></li>
+            <li><Link to="#">Propuestas comerciales</Link></li>
+            <li><Link to="#">Capacitación</Link></li>
         </ul>
         </>
         );

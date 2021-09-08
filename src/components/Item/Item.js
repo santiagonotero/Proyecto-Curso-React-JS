@@ -1,16 +1,22 @@
 import React from "react";
+import {Link, useParams} from "react-router-dom";
 
 import "../Item/Item.css"
 
-const Item=({id, producto, marca, stock}) =>{
+const Item=({key, producto, marca, stock}) =>{
+
+    const {id}=useParams();
+
+    console.log(id)
 
     return(
-
-        <div id="itemBlock">
-            <p>Producto: {producto}</p>
-            <p>Marca: {marca}</p>
-            <p>Stock disponible: {stock} artículos</p>
-        </div>
+        <Link to={`/Item/${id}`}>
+            <div id="itemBlock">
+                <p>Producto: {producto}</p>
+                <p>Marca: {marca}</p>
+                <p>Stock disponible: {stock} artículos</p>
+            </div>
+        </Link>
     );
 }
 

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import {useParams} from "react-router-dom"
 
 import ItemDetail from "../ItemDetail/ItemDetail";
 
@@ -6,10 +7,10 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 
 const API_URL = 'https://mocki.io/v1/9b52541f-adb5-4dc2-b8cb-481f79980be0'
 
-const searchId="5"
+//const searchId="5"
 
 
-const GetItems = async ()=>{
+const GetItems = async (searchId)=>{
 
     let aux=[];
 
@@ -20,21 +21,25 @@ const GetItems = async ()=>{
     return aux;       
 }
 
-const ItemDetailContainer= () =>{
+const ItemDetailContainer= (searchId) =>{
 
     const[dataToShow, setDataToShow]= useState([]);
+    //const {searchId}= useParams();
 
 
-    useEffect(()=>{      
+    useEffect(()=>{ 
+        
+        
+        //console.log(searchId)      
 
         setTimeout(()=>{
-            GetItems()
+            GetItems(searchId)
             .then((data)=> {
                 setDataToShow(data);
                 
             });
         }, 2000)
-        console.log(dataToShow);
+        //console.log(dataToShow);
         
     },[]);
 

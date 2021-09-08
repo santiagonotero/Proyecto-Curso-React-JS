@@ -2,26 +2,29 @@ import "./NavBar.css"
 import CartWidget from "../CartWidget/CartWidget"
 import SubmenuNP from "../SubmenuNP/SubmenuNP"
 import SubmenuNS from "../SubmenuNS/SubmenuNS"
+import {Link} from "react-router-dom"
 
 
 const NavBar=() =>{
   
     return(
         <header>
-            <h1 id="titulo">E-commerce</h1>
+
+            <h1><Link to="/"> E-commerce</Link></h1>
             <ul id="menuPpal">
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Nuestros productos</a>
+
+                <li><Link to="/QuienesSomos">Quienes somos</Link></li>
+                <li><Link to="/Productos">Nuestros productos</Link>              
                     <SubmenuNP />
                 </li>
-                <li><a href="#">Nuestros servicios</a>
+                <li><Link to="/Servicios">Nuestros servicios</Link>
                     <SubmenuNS />
                 </li>
-                <li><a href="#">Cómo comprar</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><Link to="/ComoComprar">Cómo comprar</Link></li>
+                <li><Link to="/Contacto">Contacto</Link></li>
             </ul>
+
             <CartWidget />
-            
         </header>
     )
 }
