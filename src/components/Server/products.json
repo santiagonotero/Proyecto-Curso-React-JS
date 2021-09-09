@@ -1,8 +1,8 @@
 [{"id":"1", "producto": "computadora", "marca": "Dell", "stock":"5", "precio": "ARS 222000", "descripcion":"PC de escritorio especial para gamers, procesador I7 11a generación, 32Gb de RAM"},
     {"id":"2", "producto": "computadora", "marca": "Samsung", "stock":"9", "precio": "ARS 198600", "descripcion": "PC de escritorio, procesador I7 10a generación, 16Gb de RAM"},
-    {"id":"3", "producto": "memoria ram", "marca": "Kingston", "stock":"4", "precio": "ARS 8500", "descripcion": "Memoria RAM de 8GB DDR4 de 8GB de almacenamiento"},
-    {"id":"4", "producto": "disco rigido", "marca": "Western Digital", "stock":"8", "precio": "ARS 19000", "descripcion":"Disco rígido SSD SATA de 2GB de almacenamiento, alta velocidad de lectura/escritura"},
-    {"id":"5", "producto": "disco rigido", "marca": "Samsung", "stock":"5", "precio": "ARS 15600", "descripcion":"Disco rígido SSD SATA de 1GB de almacenamiento"},
+    {"id":"3", "producto": "memoria_ram", "marca": "Kingston", "stock":"4", "precio": "ARS 8500", "descripcion": "Memoria RAM de 8GB DDR4 de 8GB de almacenamiento"},
+    {"id":"4", "producto": "disco_rigido", "marca": "Western Digital", "stock":"8", "precio": "ARS 19000", "descripcion":"Disco rígido SSD SATA de 2GB de almacenamiento, alta velocidad de lectura/escritura"},
+    {"id":"5", "producto": "disco_rigido", "marca": "Samsung", "stock":"5", "precio": "ARS 15600", "descripcion":"Disco rígido SSD SATA de 1GB de almacenamiento"},
     {"id":"6", "producto": "notebook", "marca": "HP", "stock":"7", "precio": "ARS 145000", "descripcion": "Laptop con procesador I5 10a generación, 8gb de RAM "},
     {"id":"7", "producto": "monitor", "marca": "Dell", "stock":"3", "precio": "ARS 27500", "descripcion":"Monitor plano de 27 pulgadas"},
     {"id":"8", "producto": "monitor", "marca": "Samsung", "stock":"2", "precio": "ARS 33000", "descripcion":"Monitor gamer curvo de 27 pulgadas"}

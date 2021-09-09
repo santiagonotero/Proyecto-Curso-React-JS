@@ -3,45 +3,37 @@ import {useParams} from "react-router-dom"
 
 import ItemDetail from "../ItemDetail/ItemDetail";
 
-//const API_URL ="./Server/products.json";
+const API_URL = 'https://mocki.io/v1/39768f5e-4a94-4c56-a0a9-508de5147ed4'
 
-const API_URL = 'https://mocki.io/v1/9b52541f-adb5-4dc2-b8cb-481f79980be0'
-
-//const searchId="5"
+//const API_URL = 'https://mocki.io/v1/9b52541f-adb5-4dc2-b8cb-481f79980be0'
 
 
-const GetItems = async (searchId)=>{
+const GetItems = async ()=>{
 
-    let aux=[];
-
-        let response = await fetch(API_URL);
-        let json= await response.json();
-        aux=json.filter(data => data.id=== searchId);
-
-    return aux;       
+    let response = await fetch(API_URL);
+    let json= await response.json();
+    return json;   
 }
 
-const ItemDetailContainer= (searchId) =>{
+const ItemDetailContainer= () =>{
 
     const[dataToShow, setDataToShow]= useState([]);
-    //const {searchId}= useParams();
+    const {id}= useParams();
+  
 
-
-    useEffect(()=>{ 
-        
-        
-        //console.log(searchId)      
+    useEffect(()=>{       
 
         setTimeout(()=>{
-            GetItems(searchId)
+            GetItems()
             .then((data)=> {
-                setDataToShow(data);
-                
+                let filtered=data.filter(index=>index.id===id)
+                setDataToShow(filtered);
+                console.log(filtered);
             });
         }, 2000)
-        //console.log(dataToShow);
         
-    },[]);
+        
+    },[id]);
 
     return (
         <>
@@ -54,8 +46,7 @@ const ItemDetailContainer= (searchId) =>{
             )}
         
         </>
-    );
-// 
+    ); 
 }
 
 
