@@ -18,12 +18,10 @@ import Item from "../Item/Item"
                 let filteredData= products.filter((item)=>item.producto === id);
                 console.log(filteredData);
                 setDataToShow(filteredData);
-                console.log(dataToShow)
             }
 
             else{
                 setDataToShow(products);
-                console.log(dataToShow);
             }
             
         }, [id]);

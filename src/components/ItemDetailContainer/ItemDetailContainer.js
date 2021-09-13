@@ -5,8 +5,6 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 
 const API_URL = 'https://mocki.io/v1/39768f5e-4a94-4c56-a0a9-508de5147ed4'
 
-//const API_URL = 'https://mocki.io/v1/9b52541f-adb5-4dc2-b8cb-481f79980be0'
-
 
 const GetItems = async ()=>{
 
@@ -35,14 +33,19 @@ const ItemDetailContainer= () =>{
         
     },[id]);
 
+    console.log(dataToShow);
+
     return (
         <>
             {dataToShow.length=== 0 ? (
                 <h1>Cargando...</h1>
             ):(
-                <ItemDetail key={dataToShow.map(filter=> filter.id)} marca={dataToShow.map(filter=> filter.marca)} 
+                <ItemDetail 
+                id={dataToShow.map(filter=> filter.id)} marca={dataToShow.map(filter=> filter.marca)} 
                 producto={dataToShow.map(filter=> filter.producto)} precio={dataToShow.map(filter=> filter.precio)}
-                descripcion={dataToShow.map(filter=> filter.descripcion)} ></ItemDetail>
+                descripcion={dataToShow.map(filter=> filter.descripcion)} stock={dataToShow.map(filter=> filter.stock)}>
+
+                </ItemDetail>
             )}
         
         </>
@@ -51,3 +54,10 @@ const ItemDetailContainer= () =>{
 
 
 export default ItemDetailContainer;
+
+
+
+
+
+
+                

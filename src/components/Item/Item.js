@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, useParams} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import "../Item/Item.css"
 
@@ -9,12 +9,12 @@ const Item=({elementId, producto, marca, stock}) =>{
 
     return(
         
-            <div id="itemBlock">
-                <p>Producto: {producto}</p>
-                <p>Marca: {marca}</p>
-                <p>Stock disponible: {stock} artículos</p>
-                <Link to={'/Item/'+ elementId}><p>Más información</p></Link>
-            </div>
+        <div id="itemBlock">
+            <p>Producto: {producto}</p>
+            <p>Marca: {marca}</p>
+            <p>Stock disponible: {stock} artículos</p>
+            <Link to={'/Item/'+ elementId}><p>Más información</p></Link>
+        </div>
         
     );
 }
