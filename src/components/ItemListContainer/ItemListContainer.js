@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import ItemList from "../ItemList/ItemList";
 import {useParams} from "react-router-dom"
 
@@ -23,16 +23,22 @@ const ItemListContainer = ()=>{
     useEffect(()=>{
 
         DataQuery().then((data)=>{
-            setProducts(data);
+
+            if(id){
+                let filteredData= data.filter((item)=>item.producto === id);
+                setProducts(filteredData);
+            }
+
+            else{
+                setProducts(data);
+            }
+
         })
         
     }, [id]);
 
-    console.log(products)
-
         return(
             <div className="CountContainer">
-                {/* <ItemCount stock={5} initial={1} onAdd{... () => {}}/> */}
                 <ItemList products={products}/>
             </div>
         );

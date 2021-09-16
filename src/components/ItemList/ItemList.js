@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import { useParams } from "react-router-dom";
 
 import Item from "../Item/Item"
     
@@ -8,23 +7,13 @@ import Item from "../Item/Item"
  
         const[dataToShow, setDataToShow]= useState([]);
     
-        const {id} =useParams();
         console.log(products);
 
-        useEffect(()=>{
-            
-            if(id){
-                console.log(id);
-                let filteredData= products.filter((item)=>item.producto === id);
-                console.log(filteredData);
-                setDataToShow(filteredData);
-            }
+         useEffect(()=>{
 
-            else{
-                setDataToShow(products);
-            }
+        setDataToShow(products);
             
-        }, [id]);
+        });
 
 
         return (dataToShow.length === 0 ? (
@@ -32,7 +21,8 @@ import Item from "../Item/Item"
             (
                 <>
                     {dataToShow.map(element => {
-                        return <Item elementId={element.id} producto={element.producto} marca={element.marca} stock={element.stock} /> 
+                        return <Item element={element} />
+                        
                         }
                     )}
                     
@@ -40,6 +30,5 @@ import Item from "../Item/Item"
             ));
 
 }
-
 
 export default ItemList;

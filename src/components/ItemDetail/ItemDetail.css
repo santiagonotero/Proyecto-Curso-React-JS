@@ -4,6 +4,7 @@
     max-width: 600px;
     margin-top: 50px;
     margin-left: 30px;
+    justify-content: center;
 }
 
 #detailCaption {
@@ -15,4 +16,12 @@
 .descFont{
     margin-left: 50px;
     padding: 3px 0px;
+}
+
+.buttonTerminar {
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: auto;
+
 }

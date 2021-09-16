@@ -3,17 +3,15 @@ import {Link} from "react-router-dom";
 
 import "../Item/Item.css"
 
-const Item=({elementId, producto, marca, stock}) =>{
-
-    console.log(elementId)
+const Item=({element}) =>{
 
     return(
         
         <div id="itemBlock">
-            <p>Producto: {producto}</p>
-            <p>Marca: {marca}</p>
-            <p>Stock disponible: {stock} artículos</p>
-            <Link to={'/Item/'+ elementId}><p>Más información</p></Link>
+            <p>Producto: {element.producto}</p>
+            <p>Marca: {element.marca}</p>
+            <p>Stock disponible: {element.tock} artículos</p>
+            <Link to={'/Item/'+ element.id}><p>Más información</p></Link>
         </div>
         
     );

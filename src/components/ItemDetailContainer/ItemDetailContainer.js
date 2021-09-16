@@ -26,25 +26,20 @@ const ItemDetailContainer= () =>{
             .then((data)=> {
                 let filtered=data.filter(index=>index.id===id)
                 setDataToShow(filtered);
-                console.log(filtered);
             });
         }, 2000)
-        
-        
+            
     },[id]);
-
-    console.log(dataToShow);
 
     return (
         <>
             {dataToShow.length=== 0 ? (
                 <h1>Cargando...</h1>
             ):(
-                <ItemDetail 
-                id={dataToShow.map(filter=> filter.id)} marca={dataToShow.map(filter=> filter.marca)} 
-                producto={dataToShow.map(filter=> filter.producto)} precio={dataToShow.map(filter=> filter.precio)}
-                descripcion={dataToShow.map(filter=> filter.descripcion)} stock={dataToShow.map(filter=> filter.stock)}>
-
+            <ItemDetail id={dataToShow.map(filter=> filter.id)} marca={dataToShow.map(filter=> filter.marca)} 
+            producto={dataToShow.map(filter=> filter.producto)} precio={dataToShow.map(filter=> filter.precio)}
+            descripcion={dataToShow.map(filter=> filter.descripcion)} stock={dataToShow.map(filter=> filter.stock)}>
+                
                 </ItemDetail>
             )}
         
@@ -56,8 +51,6 @@ const ItemDetailContainer= () =>{
 export default ItemDetailContainer;
 
 
-
-
-
+//{/* <ItemDetail itemToShow={dataToShow} > */}
 
                 
