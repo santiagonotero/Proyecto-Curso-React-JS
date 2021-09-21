@@ -1,0 +1,25 @@
+.cartTableStyle{
+
+    margin:30px;
+    border-color: black;
+    
+}
+
+.cartTableStyle th{
+    background-color: gold;
+    padding: 10px;
+}
+
+.cartTableStyle th p{
+    font-size: 16px;
+
+}
+
+.cartTableStyle tr td{
+    border-left: 3px;
+}
+
+.cartTableStyle tr td p{
+    font-size: 12px;
+    font-weight: lighter;
+}

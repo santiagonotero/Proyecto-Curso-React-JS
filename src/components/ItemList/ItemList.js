@@ -7,13 +7,13 @@ import Item from "../Item/Item"
  
         const[dataToShow, setDataToShow]= useState([]);
     
-        console.log(products);
+        //console.log(products);
 
          useEffect(()=>{
 
         setDataToShow(products);
             
-        });
+        }, [products]);
 
 
         return (dataToShow.length === 0 ? (
@@ -21,7 +21,7 @@ import Item from "../Item/Item"
             (
                 <>
                     {dataToShow.map(element => {
-                        return <Item element={element} />
+                        return <Item element={element} key={element.id} />
                         
                         }
                     )}

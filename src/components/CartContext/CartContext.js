@@ -1,4 +1,5 @@
 import React, {createContext, useState} from "react";
+import Cart from "../Cart/Cart";
 
 export const context=createContext();
 
@@ -26,23 +27,30 @@ const CartContext=({children})=>{
         
     }
     
-    const context={cart, addItem} 
     
     const removeItem=(itemId)=>{
+
         let aux_cart=cart;
-        aux_cart.splice(itemId-1);
+        let itemPos = isInCart(itemId);
+        //console.log("itemPos: " + itemPos);
+        aux_cart.splice(itemPos,1);
+        //console.log("aux_cart: %o", aux_cart);
         setCart(aux_cart);
+        //console.log ("cart: ", cart);
+
+        return(<Cart />)
         
     }
-
+    
     const clear=()=>{
-
+        
         setCart([]);
-
+        
     }
-
+    
+    const context={cart, addItem, removeItem} 
     const isInCart=(id)=>{
-
+        
         return cart.findIndex(item => item.id ===id);
     }
 

@@ -1,5 +1,6 @@
 import React, {useContext, useState} from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import CartContext from "../CartContext/CartContext";
 import {context} from "../CartContext/CartContext";
 import {useHistory} from "react-router-dom";
 import "../ItemDetail/ItemDetail.css"
@@ -15,19 +16,17 @@ const ItemDetail=({id, producto, marca, precio, stock, descripcion})=>{
         let [addedToCart, setAddedToCart] = useState(false);
         
         const addProduct=(itemsToAdd)=>{
-
-            console.log("Ejecutando la función addProduct -> ")
             
             setAddedToCart(true);
 
             let newItem = {
-            id: parseInt(id) ,
+            id: parseInt(id),
             itemsToAdd: itemsToAdd,
             producto: `${producto}`,
             marca: `${marca}`,
-            stock: `${stock}`,
+            stock: parseInt(stock),
             descripcion: `${descripcion}`,
-            precio: `${precio}`
+            precio: parseInt(precio)
         } 
         
          addItem(newItem);
