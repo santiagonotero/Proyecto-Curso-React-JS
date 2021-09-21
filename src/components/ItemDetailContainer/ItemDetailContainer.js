@@ -38,11 +38,8 @@ const ItemDetailContainer= () =>{
             {dataToShow.length=== 0 ? (
                 <h1>Cargando...</h1>
             ):(
-            <ItemDetail id={dataToShow.map(filter=> filter.id)} marca={dataToShow.map(filter=> filter.marca)} 
-            producto={dataToShow.map(filter=> filter.producto)} precio={dataToShow.map(filter=> filter.precio)}
-            descripcion={dataToShow.map(filter=> filter.descripcion)} stock={dataToShow.map(filter=> filter.stock)}>
+                dataToShow.map(product =><ItemDetail key={product.id} itemToShow={product} />)
                 
-                </ItemDetail>
             )}
         
         </>
@@ -52,7 +49,3 @@ const ItemDetailContainer= () =>{
 
 export default ItemDetailContainer;
 
-
-//{/* <ItemDetail itemToShow={dataToShow} > */}
-
-                

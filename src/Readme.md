@@ -3,11 +3,11 @@ Expande tu componente Cart.js con el desglose de la compra, y actualiza tu CartW
 
 >>Aspectos a incluir en el entregable:
 - Cart.js   <---Hecho!!!!
-- Debe mostrar el desglose de tu carrito y el precio total.
+- Debe mostrar el desglose de tu carrito y el precio total. <--HECHO!!!
 - Debe estar agregada la ruta ‘cart’ al BrowserRouter.  <--- HECHO !!!
 - Debe mostrar todos los ítems agregados agrupados.  <--- HECHO !!!
-- Por cada tipo de ítem, incluye un control para eliminar ítems.
-- De no haber ítems muestra un mensaje, de manera condicional, diciendo que no hay ítems y un react-router Link o un botón para que pueda volver al Landing (ItemDetailContainer.js) para buscar y comprar algo.
+- Por cada tipo de ítem, incluye un control para eliminar ítems. <-- HECHO!!!
+- De no haber ítems muestra un mensaje, de manera condicional, diciendo que no hay ítems y un react-router Link o un botón para que pueda volver al Landing (ItemDetailContainer.js) para buscar y comprar algo. <--- HECHO !!!
 
 
     CartWidget.js.

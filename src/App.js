@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar/NavBar"
 import { BrowserRouter, Route, Switch} from "react-router-dom"
 import React from "react"
 import CartContext from "./components/CartContext/CartContext"
+import "./estilos.css"
 
 
 const App = ()=>{

@@ -1,50 +1,55 @@
-import React, {useContext, useEffect, useState, setState, Component, useMemo} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { context } from "../CartContext/CartContext";
-import NavBar from "../NavBar/NavBar";
-import "./Cart.css"
-import ReactDOM from "react-dom";
+import "../Cart/Cart.css"
+import { useHistory } from "react-router";
 
 
 
-const Cart=()=>{
+const Cart =()=>{
     
-    const {cart, removeItem}=useContext(context);
-
+    let {cart, removeItem}=useContext(context);
+    let history = useHistory();
     const [cartList, setCartList]=useState([]);
-
 
     useEffect(()=>{
         
         console.log ("useEffect")
         
         setCartList(cart);
+        
+    },[cart]);
+        
+        
+    const deleteItem=(e, itemId)=>{
+        
+        e.preventDefault();
+        removeItem(itemId);
+        setCartList(cart);
+        console.log("deleteItem -> cartList: %o", cartList);
 
         
-        
-    }, [cart]);
-        
-        
-        const deleteItem=(e, itemId)=>{
-            
-            e.preventDefault();
-            removeItem(itemId);
-            setCartList(cart);
-            console.log("deleteItem -> cartList: %o", cartList);
-            
-            //ReactDOM.render()
-            //ReactDOM.render(<Cart />, document.getElementById("root"));
-            //setSr
-            
-        }
-        
-        
-        return (
-            <>
-                <h1>Carrito de compras</h1>
-                {cartList.length===0 ?
-                    (
+    }
+    
+    const calculateTotal=(cart)=>{
+
+        let total = 0;
+        cart.map((item)=>{total += (item.precio * item.itemsToAdd)});
+        return total;
+    }  
+
+
+
+    return (
+        <div className="cartContainer" >
+            <div id="cartContainerCaption"><h1>Carrito de compras</h1></div>
+            {cartList.length===0 ?
+                (
+                <div>
                     <h2>No hay productos en su carrito</h2>
-                    ):(
+                    <button className="cartButton" onClick={()=>{history.push('../')}}>Volver</button>
+                </div>
+                ):(
+                <div>
                     <table className="cartTableStyle">
                         <thead>
                             <tr>
@@ -56,18 +61,20 @@ const Cart=()=>{
                             </tr>
                         </thead>
                         <tbody>
-                            {cartList.map((itemToShow)=> {return (<tr key={itemToShow.id}><td><p>{itemToShow.descripcion}</p></td> 
+                            {cartList.map((itemToShow)=> {return (<tr key={itemToShow.id}><td className="descriptionCell"><p>{itemToShow.descripcion}</p></td> 
                                 <td><p>ARS {itemToShow.precio}</p></td> 
                                 <td><p>{itemToShow.itemsToAdd}</p></td> 
                                 <td><p>ARS {parseInt(itemToShow.precio) * itemToShow.itemsToAdd}</p></td> 
-                                <td><button onClick={(e)=>{deleteItem(e, itemToShow.id)}}>Eliminar</button></td></tr>)})}
+                                <td><button className="cartButton" onClick={(e)=>{deleteItem(e, itemToShow.id)}}>Eliminar</button></td></tr>)})}
                         </tbody>
                     </table>
-                    )}
 
-            </>
-        );
-
+                    <h2 className="totalFont">TOTAL: ARS {calculateTotal(cart)}</h2>
+                </div>
+                )}
+            
+        </div>
+    );
 }
 
 export default Cart

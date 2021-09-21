@@ -32,11 +32,8 @@ const CartContext=({children})=>{
 
         let aux_cart=cart;
         let itemPos = isInCart(itemId);
-        //console.log("itemPos: " + itemPos);
         aux_cart.splice(itemPos,1);
-        //console.log("aux_cart: %o", aux_cart);
-        setCart(aux_cart);
-        //console.log ("cart: ", cart);
+        setCart([...aux_cart]);
 
         return(<Cart />)
         

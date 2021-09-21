@@ -1,7 +1,16 @@
+.cartWidgetContext{
+    display: inline;
+    justify-content: center;
+    text-align: left;
+    align-items: baseline;
+    padding: 0px;
+    width:100px;
+}
+
 #iconoCarrito{
     grid-area: iconoCarrito;
-    width:50px;
-    padding: 5px 10px;
+    width:60px;
+    padding: 5px 5px;
     margin-bottom: 0px;
     align-self: center;
     justify-items: center;
@@ -12,4 +21,14 @@
 
 #iconoCarrito:hover{
     background-color: rgb(94, 94, 231);
+}
+
+.cartCounter{
+    padding: 0px;
+    width: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: right;
+    align-content: flex-end;
 }

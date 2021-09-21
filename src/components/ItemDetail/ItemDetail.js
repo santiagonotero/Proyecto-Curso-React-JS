@@ -6,12 +6,12 @@ import {useHistory} from "react-router-dom";
 import "../ItemDetail/ItemDetail.css"
 
 
-const ItemDetail=({id, producto, marca, precio, stock, descripcion})=>{
-
-//const ItemDetail=({itemToShow})=>{
+const ItemDetail=({itemToShow})=>{
         
         let history = useHistory();
         const {addItem} = useContext(context);
+
+        console.log("itemDetail -> itemToShow: %o", itemToShow)
 
         let [addedToCart, setAddedToCart] = useState(false);
         
@@ -20,13 +20,15 @@ const ItemDetail=({id, producto, marca, precio, stock, descripcion})=>{
             setAddedToCart(true);
 
             let newItem = {
-            id: parseInt(id),
+
+            id: itemToShow.id,
             itemsToAdd: itemsToAdd,
-            producto: `${producto}`,
-            marca: `${marca}`,
-            stock: parseInt(stock),
-            descripcion: `${descripcion}`,
-            precio: parseInt(precio)
+            producto: itemToShow.producto,
+            marca: itemToShow.marca, 
+            stock: itemToShow.stock,
+            descripcion: itemToShow.descripcion,
+            precio: itemToShow.precio
+
         } 
         
          addItem(newItem);
@@ -44,13 +46,13 @@ const ItemDetail=({id, producto, marca, precio, stock, descripcion})=>{
     return(
         <div id="itemDetailStyle" >
                 <h2 id="detailCaption">Detalles del artículo</h2>
-                <p className="descFont"> Producto: {producto}` </p>
-                <p className="descFont">Marca: {marca} </p>
-                <p className="descFont">Descripción: {descripcion} </p>
-                <p className="descFont">Precio: {precio} </p>
-                <p className="descFont">Cantidad disponible: {stock} artículos</p>
+                <p className="descFont"> Producto: {itemToShow.producto} </p>
+                <p className="descFont">Marca: {itemToShow.marca} </p>
+                <p className="descFont">Descripción: {itemToShow.descripcion} </p>
+                <p className="descFont">Precio: {itemToShow.precio} </p>
+                <p className="descFont">Cantidad disponible: {itemToShow.stock} artículos</p>
                 {addedToCart=== false ? (
-                    <ItemCount stock={stock} initial={1} onAdd={addProduct} id={id}/>
+                    <ItemCount stock={itemToShow.stock} initial={1} onAdd={addProduct} id={itemToShow.id}/>
                     ):(
                     <button onClick={terminar} className="buttonTerminar"> Terminar compra</button>
                     )
