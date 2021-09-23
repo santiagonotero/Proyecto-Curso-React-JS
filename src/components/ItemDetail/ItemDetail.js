@@ -1,6 +1,5 @@
 import React, {useContext, useState} from "react";
 import ItemCount from "../ItemCount/ItemCount";
-import CartContext from "../CartContext/CartContext";
 import {context} from "../CartContext/CartContext";
 import {useHistory} from "react-router-dom";
 import "../ItemDetail/ItemDetail.css"
@@ -10,8 +9,6 @@ const ItemDetail=({itemToShow})=>{
         
         let history = useHistory();
         const {addItem} = useContext(context);
-
-        console.log("itemDetail -> itemToShow: %o", itemToShow)
 
         let [addedToCart, setAddedToCart] = useState(false);
         

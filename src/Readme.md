@@ -1,17 +1,10 @@
->> Consigna: 
-Expande tu componente Cart.js con el desglose de la compra, y actualiza tu CartWidget.js para hacerlo reactivo al contexto.
-
+>> Consigna: conecta tu nueva ItemCollection de Google Firestore a tu ItemListContainer y ItemDetailContainer.
 >>Aspectos a incluir en el entregable:
-- Cart.js   <---Hecho!!!!
-- Debe mostrar el desglose de tu carrito y el precio total. <--HECHO!!!
-- Debe estar agregada la ruta ‘cart’ al BrowserRouter.  <--- HECHO !!!
-- Debe mostrar todos los ítems agregados agrupados.  <--- HECHO !!!
-- Por cada tipo de ítem, incluye un control para eliminar ítems. <-- HECHO!!!
-- De no haber ítems muestra un mensaje, de manera condicional, diciendo que no hay ítems y un react-router Link o un botón para que pueda volver al Landing (ItemDetailContainer.js) para buscar y comprar algo. <--- HECHO !!!
 
+- Conecta tu colección de firestore con el listado de ítems y con el detalle de ítem.
 
-    CartWidget.js.
+- Elimina los async mocks (promises) y reemplazalos por los llamados de Firestore. <---HECHO!!!
 
+- Si navegas a /item/:id, debe ocurrir una consulta de (1) documento.
 
-        Ahora debe consumir el CartContext y mostrar en tiempo real (aparte del ícono) qué cantidad de ítems están agregados (2 camisas y 1 gorro equivaldrían a 3 items).
-        El cart widget no se debe mostrar más si no hay items en el carrito, aplicando la técnica que elijas (dismount, style, etc).
+- Si navegas al catálogo, debes consultar (N) documentos con un query filtrado, implementando la lógica de categorías y obteniendo el id de categoría del parámetro de react-router :categoryId.
