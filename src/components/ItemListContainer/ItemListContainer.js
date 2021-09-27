@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import ItemList from "../ItemList/ItemList";
 import {useParams} from "react-router-dom"
 import { firestore } from "../../firebase";
-import {getFirestore} from "../../firebase"
 
 
 import "./ItemListContainer.css";
@@ -27,11 +26,19 @@ const ItemListContainer = ()=>{
 
         //Referencia de la base de datos
             
-        const db = firestore;
+        //const db = firestore;
+        let collection
             
         //Referencia a la collection
 
-        const collection = firestore.collection("items");
+        if(id){
+            collection = firestore.collection("items").where('producto', '==' , id)
+        }
+        else{
+            collection = firestore.collection("items")
+        }
+
+
         const query = collection.get();
 
         query.then((snapshot)=>{
@@ -44,21 +51,20 @@ const ItemListContainer = ()=>{
                 
                 const docSnapshot = doc
                 const productWithId = {...docSnapshot.data(), queryId: docSnapshot.id}
-
                 productList.push(productWithId);
                 
             })
 
-                if(id){
+                // if(id){
 
-                    console.log("id: " + id)
-                    let filteredData= productList.filter((item)=>item.producto === id);
-                    setProducts(filteredData);
-                }
+                //     console.log("id: " + id)
+                //     let filteredData= productList.filter((item)=>item.producto === id);
+                //     setProducts(filteredData);
+                // }
 
-                else{
+                // else{
                     setProducts(productList);
-                }
+                // }
             
         })
             .catch((error)=>{console.error(error)})

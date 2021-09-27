@@ -3,6 +3,7 @@
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import Cart from "./components/Cart/Cart"
+import Order from "./components/Order/Order"
 import NavBar from "./components/NavBar/NavBar"
 import { BrowserRouter, Route, Switch} from "react-router-dom"
 import React from "react"
@@ -21,6 +22,7 @@ const App = ()=>{
                         <Route path="/productos/:id" exact> <ItemListContainer/> </Route>
                         <Route path="/Item/:id"  exact > <ItemDetailContainer /> </Route>
                         <Route path="/Cart" exact> <Cart /> </Route>
+                        <Route path="/Order" exact> <Order /> </Route>
                     </Switch>
                 </main>
             </CartContext>

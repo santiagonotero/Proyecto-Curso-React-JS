@@ -13,7 +13,6 @@ const CartWidget = () =>{
 
         cart.map((items)=>{
                     total += parseInt(items.itemsToAdd);
-                    console.log("total : " + total);
                 })
         return total;
     }

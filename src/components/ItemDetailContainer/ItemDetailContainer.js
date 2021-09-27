@@ -25,22 +25,17 @@ const ItemDetailContainer= () =>{
         
          //Referencia de la base de datos
             
-         const db = firestore;
+         //const db = firestore;
             
          //Referencia a la collection
 
-         let collection = firestore.collection("items").where('id', '==' , parseInt(id));
-            collection.get()
-            .then((snapshot)=>{
-                snapshot.forEach((doc)=>
-                    {
-                        setDataToShow([...dataToShow, doc.data()]);
-                    }
-                    );
-            })
-
-            
-
+         //let collection = firestore.collection("items").where('id', '==' , parseInt(id));
+         let collection = firestore.collection("items")
+            const product= collection.doc(id)
+            product.get()           
+                .then((snapshot)=>{
+                    setDataToShow([snapshot.data()]);
+                })
 
         // setTimeout(()=>{
         //     GetItems()

@@ -11,7 +11,7 @@ const Item=({element}) =>{
             <p>Producto: {element.producto}</p>
             <p>Marca: {element.marca}</p>
             <p>Stock disponible: {element.stock} artículos</p>
-            <Link to={'/Item/'+ element.id}><p>Más información</p></Link>
+            <Link to={'/Item/'+ element.queryId}><p>Más información</p></Link>
         </div>
         
     );

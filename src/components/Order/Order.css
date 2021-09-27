@@ -1,0 +1,27 @@
+
+#orderCaption{
+
+    text-align: center;
+    margin:10px;
+}
+
+.buyerForm{
+
+    padding-left: 500px;
+    padding-right: auto;
+
+}
+
+.formLabel{
+
+    font-size: 16px;
+}
+
+.orderButton{
+
+    background-color: gold;
+    padding:7px;
+    margin:5px;
+    border-radius: 5px;
+    border-width: 1px;
+}

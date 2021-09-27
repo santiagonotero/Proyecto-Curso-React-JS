@@ -13,8 +13,6 @@ const Cart =()=>{
 
     useEffect(()=>{
         
-        console.log ("useEffect")
-        
         setCartList(cart);
         
     },[cart]);
@@ -24,10 +22,7 @@ const Cart =()=>{
         
         e.preventDefault();
         removeItem(itemId);
-        setCartList(cart);
-        console.log("deleteItem -> cartList: %o", cartList);
-
-        
+        setCartList(cart);     
     }
     
     const calculateTotal=(cart)=>{
@@ -70,6 +65,8 @@ const Cart =()=>{
                     </table>
 
                     <h2 className="totalFont">TOTAL: ARS {calculateTotal(cart)}</h2>
+
+                    <button className="cartButton" onClick={()=>{history.push('../Order')}}>Continuar compra</button>
                 </div>
                 )}
             

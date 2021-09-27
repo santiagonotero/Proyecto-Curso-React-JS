@@ -1,10 +1,6 @@
->> Consigna: conecta tu nueva ItemCollection de Google Firestore a tu ItemListContainer y ItemDetailContainer.
+>> Consigna: crea tu colección de órdenes.
 >>Aspectos a incluir en el entregable:
 
-- Conecta tu colección de firestore con el listado de ítems y con el detalle de ítem.
-
-- Elimina los async mocks (promises) y reemplazalos por los llamados de Firestore. <---HECHO!!!
-
-- Si navegas a /item/:id, debe ocurrir una consulta de (1) documento.
-
-- Si navegas al catálogo, debes consultar (N) documentos con un query filtrado, implementando la lógica de categorías y obteniendo el id de categoría del parámetro de react-router :categoryId.
+- Utiliza las operaciones de inserción para insertar tu orden en la colección y dale al user su id de orden auto-generada  <--- HECHO!!!
+- Crea los mappings para poder grabar un objeto del formato { buyer: { name, phone, email }, items: [{id, title, price}], date, total  } <--- HECHO!!!
+- Pista: Puedes controlar los stocks con multi-gets utilizando los itemId de tu cart.
