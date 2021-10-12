@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from "react";
 import { context } from "../CartContext/CartContext";
-import "../Cart/Cart.css"
+import '../../styles/Styles.scss';
 import { useHistory } from "react-router";
 
 
@@ -41,7 +41,7 @@ const Cart =()=>{
                 (
                 <div>
                     <h2>No hay productos en su carrito</h2>
-                    <button className="cartButton" onClick={()=>{history.push('../')}}>Volver</button>
+                    <button className="standardButton" onClick={()=>{history.push('../')}}>Volver</button>
                 </div>
                 ):(
                 <div>
@@ -60,13 +60,13 @@ const Cart =()=>{
                                 <td><p>ARS {itemToShow.precio}</p></td> 
                                 <td><p>{itemToShow.itemsToAdd}</p></td> 
                                 <td><p>ARS {parseInt(itemToShow.precio) * itemToShow.itemsToAdd}</p></td> 
-                                <td><button className="cartButton" onClick={(e)=>{deleteItem(e, itemToShow.id)}}>Eliminar</button></td></tr>)})}
+                                <td><button className="standardButton" onClick={(e)=>{deleteItem(e, itemToShow.id)}}>Eliminar</button></td></tr>)})}
                         </tbody>
                     </table>
 
                     <h2 className="totalFont">TOTAL: ARS {calculateTotal(cart)}</h2>
 
-                    <button className="cartButton" onClick={()=>{history.push('../Order')}}>Continuar compra</button>
+                    <button className="standardButton" onClick={()=>{history.push('../Order')}}>Continuar compra</button>
                 </div>
                 )}
             

@@ -1,7 +1,8 @@
 import React, {useContext, useEffect, useState} from "react";
 import { context } from "../CartContext/CartContext";
 import { firestore } from "../../firebase";
-import "../Order/Order.css"
+import '../../styles/Styles.scss';
+//import "../Order/Order.css"
 
 
 const Order=()=>{
@@ -45,7 +46,7 @@ const Order=()=>{
     return(
         <>
             <h1 id="orderCaption">Datos del comprador</h1>
-            <div className="buyerForm">
+            <form className="buyerForm">
                 <label><p className="formLabel">Nombre:</p></label>
                 <input placeholder="Nombre" type="text" onChange={saveName} /> <br /><br />
                 <label><p className="formLabel">Teléfono:</p></label>
@@ -53,8 +54,8 @@ const Order=()=>{
                 <label><p className="formLabel">E-mail:</p></label>
                 <input placeholder="E-mail" type="email" onChange={saveEmail} /><br /><br />
 
-                <button className="orderButton" onClick={sendOrder}>Enviar</button>
-            </div>
+                <button className="standardButton" onClick={sendOrder}>Enviar</button>
+            </form>
         </>
     );
 }

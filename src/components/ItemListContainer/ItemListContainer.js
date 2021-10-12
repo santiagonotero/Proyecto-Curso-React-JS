@@ -2,9 +2,9 @@ import React, {useEffect, useState} from "react";
 import ItemList from "../ItemList/ItemList";
 import {useParams} from "react-router-dom"
 import { firestore } from "../../firebase";
+import '../../styles/Styles.scss';
 
-
-import "./ItemListContainer.css";
+//import "./ItemListContainer.css";
 
 //const DataQuery = async ()=>{
     

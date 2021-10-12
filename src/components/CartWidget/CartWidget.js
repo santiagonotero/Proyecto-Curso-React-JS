@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { context } from "../CartContext/CartContext";
-import "./CartWidget.css"
+import '../../styles/Styles.scss';
 
 const CartWidget = () =>{
 
@@ -20,12 +20,15 @@ const CartWidget = () =>{
 
     return(
         <div className="cartWidgetContext">
-            <Link to="../Cart" className="material-icons" id="iconoCarrito">shopping_cart {cart.length === 0 ? (
-                null
+        <table>
+        <tbody>
+            <tr><td><Link to="../Cart" className="material-icons" id="iconoCarrito">shopping_cart</Link></td><td>{cart.length === 0 ? (
+                <p>   </p>
             ):(
                 <p className="cartCounter">{totalItemsOnCart(cart)}</p>
-            )}</Link>
-            
+            )}</td></tr>
+        </tbody>
+        </table>
         </div>
     );
 }

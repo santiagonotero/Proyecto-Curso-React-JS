@@ -2,7 +2,8 @@ import React, {useContext, useState} from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import {context} from "../CartContext/CartContext";
 import {useHistory} from "react-router-dom";
-import "../ItemDetail/ItemDetail.css"
+import '../../styles/Styles.scss';
+//import "../ItemDetail/ItemDetail.css"
 
 
 const ItemDetail=({itemToShow})=>{
@@ -11,6 +12,8 @@ const ItemDetail=({itemToShow})=>{
         const {addItem} = useContext(context);
 
         let [addedToCart, setAddedToCart] = useState(false);
+
+        console.log("Imagen link: %s", itemToShow.image)
         
         const addProduct=(itemsToAdd)=>{
             
@@ -19,13 +22,13 @@ const ItemDetail=({itemToShow})=>{
             let newItem = {
 
             id: itemToShow.id,
+            image: itemToShow.image,
             itemsToAdd: itemsToAdd,
-            producto: itemToShow.producto,
+            producto: itemToShow.titulo_producto,
             marca: itemToShow.marca, 
             stock: itemToShow.stock,
             descripcion: itemToShow.descripcion,
             precio: itemToShow.precio
-
         } 
         
          addItem(newItem);
@@ -43,15 +46,16 @@ const ItemDetail=({itemToShow})=>{
     return(
         <div id="itemDetailStyle" >
                 <h2 id="detailCaption">Detalles del artículo</h2>
-                <p className="descFont"> Producto: {itemToShow.producto} </p>
-                <p className="descFont">Marca: {itemToShow.marca} </p>
-                <p className="descFont">Descripción: {itemToShow.descripcion} </p>
-                <p className="descFont">Precio: {itemToShow.precio} </p>
-                <p className="descFont">Cantidad disponible: {itemToShow.stock} artículos</p>
+                <img src={itemToShow.image} />
+                <p className="descFont"><b>Producto:</b> {itemToShow.titulo_producto} </p>
+                <p className="descFont"><b>Marca:</b> {itemToShow.marca} </p>
+                <p className="descFont"><b>Descripción:</b> {itemToShow.descripcion} </p>
+                <p className="descFont"><b>Precio:</b> ARS {itemToShow.precio} </p>
+                <p className="descFont"><b>Cantidad disponible:</b> {itemToShow.stock} artículos</p>
                 {addedToCart=== false ? (
                     <ItemCount stock={itemToShow.stock} initial={1} onAdd={addProduct} id={itemToShow.id}/>
                     ):(
-                    <button onClick={terminar} className="buttonTerminar"> Terminar compra</button>
+                    <button onClick={terminar} className="standardButton"> Terminar compra</button>
                     )
                 }
         </div>

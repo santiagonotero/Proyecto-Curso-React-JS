@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200.38583"
+   height="49.157478"
+   viewBox="0 0 53.018721 13.006245"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4600">
+      <stop
+         style="stop-color:#d40000;stop-opacity:1;"
+         offset="0"
+         id="stop4596" />
+      <stop
+         style="stop-color:#d40000;stop-opacity:0;"
+         offset="1"
+         id="stop4598" />
+    </linearGradient>
+    <rect
+       x="180.14336"
+       y="98.612961"
+       width="24.070881"
+       height="11.6472"
+       id="rect835" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4600"
+       id="linearGradient4602"
+       x1="100.02083"
+       y1="148.74449"
+       x2="92.925156"
+       y2="164.80792"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4600"
+       id="radialGradient11718"
+       cx="99.257126"
+       cy="152.88727"
+       fx="99.257126"
+       fy="152.88727"
+       r="3.8044555"
+       gradientTransform="matrix(-4.721483,3.4023575,-4.873213,-6.762607,1221.2185,698.267)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     units="px"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.7531968"
+     inkscape:cx="49.977876"
+     inkscape:cy="66.28096"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text833"
+       style="font-weight:bold;font-size:7.7611px;line-height:1.25;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Bold';white-space:pre;shape-inside:url(#rect835);" />
+    <path
+       id="path843"
+       style="opacity:0.997;mix-blend-mode:normal;fill:url(#radialGradient11718);fill-opacity:1;stroke:none;stroke-width:0.745634;stroke-linecap:round"
+       d="M 6.3828883,0.03909422 A 6.3518801,6.4805525 0 0 0 0.05833403,6.5189305 6.3518801,6.4805525 0 0 0 6.4102894,12.999679 6.3518801,6.4805525 0 0 0 11.941992,9.7022157 5.1343367,4.8789438 0 0 1 7.9421025,11.522672 5.1343367,4.8789438 0 0 1 2.8077442,6.6440706 5.1343367,4.8789438 0 0 1 7.9421025,1.7645571 5.1343367,4.8789438 0 0 1 12.269911,4.0188884 6.3518801,6.4805525 0 0 0 6.4102894,0.03909422 a 6.3518801,6.4805525 0 0 0 -0.027406,0 z"
+       inkscape:export-xdpi="254.53221"
+       inkscape:export-ydpi="254.53221" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:13.7184px;line-height:1.25;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Bold';opacity:0.998;fill:#0000ff;stroke-width:0.467673"
+       x="9.8068295"
+       y="9.521616"
+       id="text841"
+       inkscape:export-xdpi="254.53221"
+       inkscape:export-ydpi="254.53221"><tspan
+         sodipodi:role="line"
+         id="tspan839"
+         x="9.8068295"
+         y="9.521616"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.7184px;font-family:VT323;-inkscape-font-specification:'VT323, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke-width:0.467673">ompumaxx</tspan></text>
+  </g>
+</svg>

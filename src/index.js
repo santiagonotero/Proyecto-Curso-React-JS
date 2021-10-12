@@ -11,7 +11,7 @@ import App from "./App"
 
 // Agregamos una hoja de estilos al proyecto
 
-import "./estilos.css"
+import "../src/styles/Styles.scss"
 
 // Aquí tenemos nuestra función render corriendo
 

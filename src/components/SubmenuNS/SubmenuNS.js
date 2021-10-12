@@ -4,10 +4,10 @@ import {Link} from "react-router-dom"
 const SubmenuNS = () =>{
     return(
         <>
-        <ul id="submenuNS">
-            <li><Link to="#">Asesoramiento</Link></li>
-            <li><Link to="#">Propuestas comerciales</Link></li>
-            <li><Link to="#">Capacitación</Link></li>
+        <ul id="submenuNS" className="submenu">
+            <li><Link to="/asesoramiento">Asesoramiento</Link></li>
+            <li><Link to="/propuestas_comerciales">Propuestas comerciales</Link></li>
+            <li><Link to="/capacitacion">Capacitación</Link></li>
         </ul>
         </>
         );

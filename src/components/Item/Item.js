@@ -1,20 +1,21 @@
 import React from "react";
 import {Link} from "react-router-dom";
-
-import "../Item/Item.css"
+import '../../styles/Styles.scss';
 
 const Item=({element}) =>{
 
     return(
         
-        <div id="itemBlock">
-            <p>Producto: {element.producto}</p>
-            <p>Marca: {element.marca}</p>
-            <p>Stock disponible: {element.stock} artículos</p>
-            <Link to={'/Item/'+ element.queryId}><p>Más información</p></Link>
+        <div className="itemBlock">
+        <img src={element.th_image} />
+            <p><b>Producto:</b> {element.titulo_producto}</p>
+            <p><b>Marca:</b> {element.marca}</p>
+            <p><b>Stock disponible:</b> {element.stock} artículos</p>
+            <Link to={'/Item/'+ element.queryId} className="itemFooter"><p>Más información</p></Link>
+            <p className="ItemPriceFont">ARS {element.precio}</p>
         </div>
         
-    );
-}
-
-export default Item;
+        );
+    }
+    
+    export default Item;
