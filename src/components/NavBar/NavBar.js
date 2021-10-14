@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import '../../styles/Styles.scss';
-//import {companyLogo} from '../../images/logo.png'
-//import {submenuNP, submenuNS} from "./Submenu"
 import CartWidget from "../CartWidget/CartWidget"
 import SubmenuNP from "../SubmenuNP/SubmenuNP"
 import SubmenuNS from "../SubmenuNS/SubmenuNS"
-import {Link, useParams} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 import logo from '../../Images/Sources/logo.svg'
 

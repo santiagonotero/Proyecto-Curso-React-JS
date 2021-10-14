@@ -17,6 +17,7 @@ const Contacto =()=>{
                 <textarea cols="39" rows="10"  id="formMessage" /> <br />
                 <button type="submit" className="standardButton" >Enviar</button>
             </form> 
+            <div className="areaFill" />
         </>
     )
 

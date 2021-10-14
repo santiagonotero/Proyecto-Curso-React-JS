@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import "../src/styles/Styles.scss"
 
 const Capacitacion=()=>{
@@ -10,13 +11,13 @@ const Capacitacion=()=>{
             <p>Si tenés personal a cargo que no se lleva bien con las computadoras, no te aflijas. 
             Nosotros ofrecemos servicio de capacitación corporativa. Entrenamos a grupos de personas en el manejo de software para empresas. 
             Desde simples programas para ofimática hasta sofisticados softwares de simulación, edición y proyectos.</p>
-            <h1>  </h1><br />
-            <h1>  </h1><br />
+            <p>Entrá en <Link to="/contacto">contacto</Link> con nosotros, explicanos bien tu necesidad y te vamos a contactar para hacerte una propuesta
+            acorde a tu necesidad</p>
             <h1>  </h1><br />
             <p>Compumaxx...maximiza tu experiencia!!!</p>
-            <h1>  </h1><br />
-            <h1>  </h1><br />
-            <h1>  </h1><br />
+            <div className="areaFill" />
+            <div className="areaFill" />
+            <div className="areaFill" />
         </div>
     );
 }

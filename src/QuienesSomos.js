@@ -5,6 +5,7 @@ const QuienesSomos=()=>{
 
 
     return(
+        <>
         <div className="mainContainer">
             <h1 className="centeredText">Quienes somos</h1>
             <p>Compumax nació en el año 2021 a partir de un grupo de entusiastas de la informática, quienes aunaron su experiencia técnica, su pasión por la tecnología 
@@ -17,10 +18,10 @@ const QuienesSomos=()=>{
             <p>Contamos con personal altamente capacitado para entender los problemas de quienes acuden por nuestros servicios, y de proveerles la mejor solución a su necesidad en términos 
             económicos y funcionales.</p>
             <h1>  </h1><br />
-            <h1>  </h1><br />
-            <h1>  </h1><br />
             <p>Compumaxx...maximiza tu experiencia!!!</p>
         </div>
+        <div className="areaFill" />
+        </>
     );
 }
 

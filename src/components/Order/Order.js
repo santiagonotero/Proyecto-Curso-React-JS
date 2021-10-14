@@ -2,15 +2,12 @@ import React, {useContext, useEffect, useState} from "react";
 import { context } from "../CartContext/CartContext";
 import { firestore } from "../../firebase";
 import '../../styles/Styles.scss';
-//import "../Order/Order.css"
 
 
 const Order=()=>{
 
     let{cart} = useContext(context);
     const db = firestore.collection("ordenes");
-
-    //db.collection("orders").add()
 
     const[nombre, setNombre]=useState("");
     const[telefono, setTelefono]=useState("");
@@ -56,6 +53,8 @@ const Order=()=>{
 
                 <button className="standardButton" onClick={sendOrder}>Enviar</button>
             </form>
+            <div className="areaFill" />
+            <div className="areaFill" />
         </>
     );
 }

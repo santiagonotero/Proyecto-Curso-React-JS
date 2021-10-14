@@ -11,12 +11,11 @@
 
 #submenuNS li{   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-content: center;
+    text-align: left;
     cursor:pointer;
     margin-left:0px;
     padding: 10px 0px; 
     text-decoration: none;
-    /* background-color:rgb(252, 215, 8);    */
 }
 
 #submenuNS li a{

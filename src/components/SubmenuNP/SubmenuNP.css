@@ -11,7 +11,7 @@
 
 #submenuNP li{   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-content: center;
+    text-align: left;
     cursor:pointer;
     margin-left:0px;
     padding: 10px 0px; 

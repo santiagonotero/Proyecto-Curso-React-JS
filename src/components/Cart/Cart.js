@@ -35,6 +35,7 @@ const Cart =()=>{
 
 
     return (
+        <>
         <div className="cartContainer" >
             <div id="cartContainerCaption"><h1>Carrito de compras</h1></div>
             {cartList.length===0 ?
@@ -63,14 +64,15 @@ const Cart =()=>{
                                 <td><button className="standardButton" onClick={(e)=>{deleteItem(e, itemToShow.id)}}>Eliminar</button></td></tr>)})}
                         </tbody>
                     </table>
-
                     <h2 className="totalFont">TOTAL: ARS {calculateTotal(cart)}</h2>
-
                     <button className="standardButton" onClick={()=>{history.push('../Order')}}>Continuar compra</button>
                 </div>
                 )}
-            
         </div>
+        <div className="areaFill" /> 
+        <div className="areaFill" />
+        <div className="areaFill" />
+        </>
     );
 }
 

@@ -28,6 +28,8 @@ const ComoComprar=()=>{
                 <p><li>En la página de pagos hay un formulario con tus datos de contacto. Es importante que lo completes bien para que sepamos dónde enviar tu pedido. Luego de completado hacé clic en Enviar y 
                 listo!!! Tu orden ya fue generada. </li></p>
             </ol>
+            <div className="areaFill" />
+            <div className="areaFill" />
         </div>
 
     );

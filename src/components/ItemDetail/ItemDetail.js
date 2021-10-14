@@ -3,7 +3,6 @@ import ItemCount from "../ItemCount/ItemCount";
 import {context} from "../CartContext/CartContext";
 import {useHistory} from "react-router-dom";
 import '../../styles/Styles.scss';
-//import "../ItemDetail/ItemDetail.css"
 
 
 const ItemDetail=({itemToShow})=>{
@@ -44,6 +43,7 @@ const ItemDetail=({itemToShow})=>{
 
 
     return(
+        <>
         <div id="itemDetailStyle" >
                 <h2 id="detailCaption">Detalles del artículo</h2>
                 <img src={itemToShow.image} />
@@ -59,6 +59,8 @@ const ItemDetail=({itemToShow})=>{
                     )
                 }
         </div>
+        <div className="areaFill" />
+        </>
     );
 }
 
