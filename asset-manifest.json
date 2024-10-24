@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/santiagonotero/Proyecto-Curso-React-JS/static/css/main.1f73123e.chunk.css",
-    "main.js": "/santiagonotero/Proyecto-Curso-React-JS/static/js/main.cae00adb.chunk.js",
-    "main.js.map": "/santiagonotero/Proyecto-Curso-React-JS/static/js/main.cae00adb.chunk.js.map",
+    "main.css": "/santiagonotero/Proyecto-Curso-React-JS/static/css/main.e45922f8.chunk.css",
+    "main.js": "/santiagonotero/Proyecto-Curso-React-JS/static/js/main.158a9ebc.chunk.js",
+    "main.js.map": "/santiagonotero/Proyecto-Curso-React-JS/static/js/main.158a9ebc.chunk.js.map",
     "runtime-main.js": "/santiagonotero/Proyecto-Curso-React-JS/static/js/runtime-main.8b8e07bb.js",
     "runtime-main.js.map": "/santiagonotero/Proyecto-Curso-React-JS/static/js/runtime-main.8b8e07bb.js.map",
-    "static/js/2.a84f6ff0.chunk.js": "/santiagonotero/Proyecto-Curso-React-JS/static/js/2.a84f6ff0.chunk.js",
-    "static/js/2.a84f6ff0.chunk.js.map": "/santiagonotero/Proyecto-Curso-React-JS/static/js/2.a84f6ff0.chunk.js.map",
+    "static/js/2.826939c7.chunk.js": "/santiagonotero/Proyecto-Curso-React-JS/static/js/2.826939c7.chunk.js",
+    "static/js/2.826939c7.chunk.js.map": "/santiagonotero/Proyecto-Curso-React-JS/static/js/2.826939c7.chunk.js.map",
     "index.html": "/santiagonotero/Proyecto-Curso-React-JS/index.html",
-    "static/css/main.1f73123e.chunk.css.map": "/santiagonotero/Proyecto-Curso-React-JS/static/css/main.1f73123e.chunk.css.map",
-    "static/js/2.a84f6ff0.chunk.js.LICENSE.txt": "/santiagonotero/Proyecto-Curso-React-JS/static/js/2.a84f6ff0.chunk.js.LICENSE.txt"
+    "static/css/main.e45922f8.chunk.css.map": "/santiagonotero/Proyecto-Curso-React-JS/static/css/main.e45922f8.chunk.css.map",
+    "static/js/2.826939c7.chunk.js.LICENSE.txt": "/santiagonotero/Proyecto-Curso-React-JS/static/js/2.826939c7.chunk.js.LICENSE.txt",
+    "static/media/logo.efdd5b2e.svg": "/santiagonotero/Proyecto-Curso-React-JS/static/media/logo.efdd5b2e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8b8e07bb.js",
-    "static/js/2.a84f6ff0.chunk.js",
-    "static/css/main.1f73123e.chunk.css",
-    "static/js/main.cae00adb.chunk.js"
+    "static/js/2.826939c7.chunk.js",
+    "static/css/main.e45922f8.chunk.css",
+    "static/js/main.158a9ebc.chunk.js"
   ]
 }
